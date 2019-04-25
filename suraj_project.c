@@ -174,7 +174,6 @@ int main()
 		printf("%d\t\t\t\t%d\n",waiting_time[i],waiting_time[i]+burst[i]);
 	}
 	printf("\n");
-	
 	printf("Average waiting time = ");
 	int waitsum=0,turnsum=0;
 	for(i=0;i<N;i++){
@@ -184,5 +183,5 @@ int main()
 	printf("%f",(float)waitsum/(float)N);
 	printf("\n");
 	printf("Average turnaroud time = ");
-	
+	printf("%f",(float)turnsum/(float)N);
 }
