@@ -155,7 +155,7 @@ int main()
 			}
 		}
 		if(esc==pq3){
-			
+		break;
 		}
 		}
 		
