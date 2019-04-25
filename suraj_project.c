@@ -1,9 +1,8 @@
 #include<stdio.h>
 #include<stdbool.h>
-
 int main()
 	{
-		system("color 3B");		
+	system("color 3B");		
 	int N,i,pq1=0,pq2=0,pq3=0,tt=0;
 	int Q1[5]={0},Q2[5]={0},Q3[5]={0};
 	// Q1=
@@ -37,7 +36,6 @@ int main()
 			pq3++;
 		}	
 	}
-	//sorting performed.
    int  j; 
    for (i = 0; i < pq2-1; i++)   
    {
@@ -49,15 +47,14 @@ int main()
            	Q2[j+1]=temp;
        }
 } }
-	//creating of reamainig burst time array.
+	
 	for(i=0;i<N;i++){
-		waiting_time[i]=0;//waiting time array to zer0.
+		waiting_time[i]=0;
 		rem_bt[i]=burst[i];
 	}	
 	while(1){
 		bool done=true;
 		int Qt=10;
-		//Qt =10s; for multilevel queue scheduling.
 		while(Qt>0)
 		{
 		for(i=0;i<pq1 && Qt>0;i++){
@@ -68,7 +65,6 @@ int main()
 						tt=tt+4;
 						Qt=Qt-4;
 						rem_bt[Q1[i]-1]-=4;
-						
 						printf("%d\t",processes[Q1[i]-1]);
 					}
 					else{
@@ -101,7 +97,6 @@ int main()
 		Qt=10;
 
 		while(Qt>0){
-		
 		for(i=0;i<pq2 && Qt>0;i++){ //loop to traverse queue 2
 			if(rem_bt[Q2[i]-1]>0){
 				done =false;
