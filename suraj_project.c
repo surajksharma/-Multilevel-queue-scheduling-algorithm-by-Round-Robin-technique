@@ -184,5 +184,5 @@ int main()
 	printf("%f",(float)waitsum/(float)N);
 	printf("\n");
 	printf("Average turnaroud time = ");
-	printf("%f",(float)turnsum/(float)N);
+	
 }
