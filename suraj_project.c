@@ -1,8 +1,6 @@
 #include<stdio.h>
 #include<stdbool.h>
 
-//SORTIING
-
 int main()
 	{
 		system("color 3B");		
@@ -14,13 +12,6 @@ int main()
 	printf("Enter the number of processes :-\n");
 	scanf("%d",&N);
 	int processes[N],waiting_time[N],burst[N],priority[N],rem_bt[N];
-	//  N = no. of processes.
-	//  processes[N] = array to store n processes.
-	//  waiting_time[N] = array to store waiting time of N processes.
-	//  priority[N] = array to store priority of N processes.
-	//  burst[N] = burst time of N processes.
-	//  rem_bt[N]= remaining burst time of processes.
-	
 	for(i=0;i<N;i++){
 		int b;		//b = input of burst time for every process.
 		int pr;		//pr = input of priority for each process.
