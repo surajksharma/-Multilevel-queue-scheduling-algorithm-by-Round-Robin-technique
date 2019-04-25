@@ -21,7 +21,6 @@ int main()
 	//  burst[N] = burst time of N processes.
 	//  rem_bt[N]= remaining burst time of processes.
 	
-	/* TO TAKE INPUTS FROM THE USER	*/
 	for(i=0;i<N;i++){
 		int b;		//b = input of burst time for every process.
 		int pr;		//pr = input of priority for each process.
@@ -94,7 +93,7 @@ int main()
 					tt=tt+Qt;
 					Qt=0;
 					printf("%d\t",processes[Q1[i]-1]);
-					break;// break always breaks from the loop.
+					break;
 				}
 			}	
 		}
